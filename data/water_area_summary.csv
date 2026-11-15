@@ -1,0 +1,5 @@
+year,sensor,collection,window,max_cloud_pct,mndwi_threshold,n_scenes,water_area_km2,change_from_1990_km2,change_from_1990_pct
+1990,Landsat 5 TM,LANDSAT/LT05/C02/T1_L2,April-June 1990,20,0.2,4,1860.4,0.0,0.0
+2003,Landsat 7 ETM+,LANDSAT/LE07/C02/T1_L2,April-June 2003,20,0.2,4,1733.56,-126.84,-6.8
+2013,Landsat 8 OLI,LANDSAT/LC08/C02/T1_L2,April-June 2013,20,0.2,14,1440.44,-419.96,-22.6
+2023,Landsat 8 OLI,LANDSAT/LC08/C02/T1_L2,April-June 2023,20,0.2,17,1427.51,-432.89,-23.3
