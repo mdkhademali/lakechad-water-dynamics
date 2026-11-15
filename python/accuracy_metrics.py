@@ -1,33 +1,6 @@
 #!/usr/bin/env python3
 """
 accuracy_metrics.py
--------------------
-Accuracy metrics for the Lake Chad open-water maps (manuscript Section 2.5, Table 4).
-
-Sampling design: 100 points in the mapped-water stratum and 100 in the mapped
-non-water stratum per year. Confusion-matrix convention used throughout:
-
-                        reference water   reference non-water
-    mapped water               TP                  FP
-    mapped non-water           FN                  TN
-
-(rows = mapped classes / sampling strata, columns = reference classes)
-
-Metrics (sample-based, NOT area-adjusted):
-    OA    overall accuracy = (TP + TN) / N
-    CI    95% Wilson score interval for OA
-    Kappa Cohen's kappa
-    UA    water user's accuracy     = TP / (TP + FP)
-    PA    water producer's accuracy = TP / (TP + FN)
-
-Usage
------
-    # from confusion-matrix counts (default)
-    python python/accuracy_metrics.py
-
-    # or directly from the labelled reference points
-    python python/accuracy_metrics.py --points data/reference_points_labelled.csv
-        (columns: year, mapped, reference; 1 = water, 0 = non-water)
 """
 import argparse
 import math

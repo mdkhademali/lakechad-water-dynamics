@@ -1,18 +1,6 @@
 #!/usr/bin/env python3
 """
-make_figures.py
----------------
-Draws the manuscript figures from the CSV files in data/:
-
-    Figure 3  Open-water area for the four observation years
-    Figure 4  Confusion matrices (rows = mapped classes, columns = reference classes)
-    Figure 5  Overall, user's and producer's accuracy by year
-
-Inputs : data/water_area_summary.csv, data/confusion_matrices.csv
-Outputs: figures/Figure3_open_water_area.(png|pdf), Figure4_confusion_matrices.png,
-         Figure5_accuracy_comparison.png
-
-Usage:  python python/make_figures.py
+make_figures.p
 """
 from pathlib import Path
 
